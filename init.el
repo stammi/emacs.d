@@ -32,3 +32,20 @@
 ;; see https://github.com/technomancy/swank-clojure/blob/master/README.md
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
+(add-to-list 'load-path "~/opt/emacs-deps")
+; see http://clojure.roboloco.net/?p=979
+;; wget http://mumble.net/~campbell/emacs/paredit.el
+(require 'paredit)
+
+;; wget http://nschum.de/src/emacs/highlight-parentheses/highlight-parentheses.el
+;; see http://www.emacswiki.org/emacs/HighlightParentheses
+(require 'highlight-parentheses)
+(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'clojure-mode-hook
+(lambda ()
+(highlight-parentheses-mode t)
+(paredit-mode t)
+(slime-mode t)))
+(setq hl-paren-colors
+'("red1" "orange1" "yellow1" "green1" "cyan1"
+"slateblue1" "magenta1" "purple"))
