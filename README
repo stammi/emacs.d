@@ -1,1 +1,12 @@
 This is my very first emacs config. It sort of works, so i'll push it.
+
+relevant cheat sheets:
+emacs
+http://www.emacswiki.org/emacs/ReferenceCards
+
+slime:
+http://www.pchristensen.com/blog/articles/public-beta-open-for-ultimate-n00b-slimeemacs-cheat-sheet/
+
+paredit:
+http://www.emacswiki.org/emacs/PareditCheatsheet
+
