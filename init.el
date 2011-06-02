@@ -1,7 +1,3 @@
-;; Using 1024x768
-;; see: http://www.emacswiki.org/emacs/GoodFonts
-;; sudo apt-get install xfonts-terminus  console-terminus
-(set-face-attribute 'default nil :font "-*-terminus-medium-r-*-*-*-140-75-75-*-*-iso8859-15")
 
 ;; see http://riddell.us/ClojureSwankLeiningenWithEmacsOnLinux.html
 ;; clojure-mode
