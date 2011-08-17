@@ -45,3 +45,6 @@
 (setq hl-paren-colors
 '("red1" "orange1" "yellow1" "green1" "cyan1"
 "slateblue1" "magenta1" "purple"))
+
+;;use shift left,right,up,down to navigate through buffers
+(windmove-default-keybindings)
